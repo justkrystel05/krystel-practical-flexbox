@@ -1,283 +1,269 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>KrystelFlexbox7</title>
-
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamposFlexbox7</title>
+</head>
+<style>
     * {
-      margin: 0px;
-      padding: 0px;
+        margin: 0px;
+        padding: 0px;
     }
 
     body {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      padding: 5px;
-      height: calc(100vh - 10px);
+        padding: 4px;
+        height: calc(100vh - 8px);
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
     }
 
     nav,
     main,
     aside,
     footer {
-      border: 1px solid black;
+        border: 1px solid black;
+        padding: 4px;
     }
 
     nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 4px;
-      padding: 4px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .navcont1 {
-      display: flex;
-      justify-content: space-between;
-      gap: 5px;
-      align-items: center;
+    .ambot {
+        display: flex;
+        align-items: center;
+        margin: 2px;
+        gap: 2px;
     }
 
-    .navcont2 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
+    .navboxone {
+        background-color: red;
+        height: 40px;
+        width: 40px;
     }
 
-    .navredbox {
-      background-color: red;
-      height: 30px;
-      width: 30px;
+    .navmain {
+        display: flex;
+        gap: 2px;
+        margin: 2px;
     }
 
-    .navbigbox {
-      background-color: red;
-      height: 30px;
-      width: 60px;
+    .navmain2boxes {
+        background-color: red;
+        height: 30px;
+        width: 50px;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      flex-grow: 1;
+    .center {
+        display: flex;
+        gap: 4px;
+        flex-grow: 1;
+
     }
 
     main {
-      display: flex;
-      flex-grow: 1;
-      gap: 5px;
-      padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 4px;
     }
 
-    .maincont1,
-    .maincont2 {
-      border: 1px solid black;
+
+    .namo {
+        display: flex;
+        flex-grow: 1;
+    
     }
 
-    .maincont1 {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      height: 460px;
-      width: 250px;
-      gap: 5px;
-      padding: 5px;
+    .centerfirst {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-grow: 1;
+        width: 50%;
+        border: 1px solid black;
     }
 
-    .mainbox1 {
-      height: 85px;
-      border: 1px solid black;
-      width: 85px;
+    .centerfirstboxes1 {
+        border: 1px solid black;
+        height: 150px;
+        width: 180px;
+        margin: 2px;
+
     }
 
-    .maincont1bx {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding: 5px;
+    .centerfirstboxes2 {
+        border: 1px solid black;
+        height: 150px;
+        width: 180px;
+        margin: 2px;
+
     }
 
-    .mainbx2 {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+
+    .centersecond {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 50%; 
+        gap: 4px;
+        padding: 4px;
+        border: 1px solid black;
     }
 
-    .maincont2 {
-      display: flex;
-      flex-wrap: wrap;
-      flex-grow: 1;
-      justify-content: center;
-      height: 460px;
-      width: 250px;
-      gap: 50px;
-      padding: 5px;
-    }
+    .centersecondboxes {
+        border: 1px solid black;
+        height: 80px;
+        width: 90px;
 
-    .mainbox2 {
-      height: 150px;
-      border: 1px solid black;
-      width: 200px;
+
     }
 
     aside {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
     }
 
-    .asideitem {
-      border: 1px solid black;
-      height: 25px;
-      width: 15vw;
+    .asideboxes {
+        border: 1px solid black;
+        margin: 2px;
+        height: 35px;
+        width: 15vw;
     }
 
-    footer {
-      display: flex;
-      flex-direction: column;
-      padding: 4px;
+    .footerfirst {
+        display: flex;
+        gap: 2px;
+        margin: 4px;
+        align-items: center;
     }
 
-    .footer1 {
-      display: flex;
-      gap: 4px;
-      padding: 4px;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
+    .footerbox {
+        background-color: red;
+        height: 40px;
+        width: 40px;
     }
 
-    .footercont1 {
-      display: flex;
-      gap: 5px;
-      align-items: center;
+    .footersecond {
+        display: flex;
+        gap: 2px;
+        margin: 4px;
+        border: 1px solid rgb(103, 100, 100);
     }
 
-    .footer1redbox {
-      background-color: red;
-      height: 40px;
-      width: 40px;
+    .footerboxes {
+        display: flex;
+        gap: 4px;
+        justify-content: center;
     }
 
-    .footer2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      padding: 4px;
+    .footercubes {
+        background-color: red;
+        height: 25px;
+        width: 25px;
     }
 
-    .footercont2 {
-      display: flex;
-      gap: 5px;
+    .footercopyright {
+        display: flex;
+        justify-content: center;
     }
-
-    .footer2boxes {
-      display: flex;
-      flex-direction: row;
-      gap: 4px;
-    }
-
-    .footer2redbox {
-      background-color: red;
-      height: 20px;
-      width: 20px;
-    }
-  </style>
-</head>
+</style>
 
 <body>
-  <nav>
-    <div class="navcont1">
-      <div class="navredbox"></div>
-      <div>FLEXBOX</div>
-    </div>
 
-    <div class="navcont2">
-      <div class="navbigbox"></div>
-      <div class="navbigbox"></div>
-    </div>
-  </nav>
 
-  <div class="container">
-    <main>
-      <div class="maincont1">
-        <div class="maincont1bx">
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
-          <div class="mainbox1"></div>
+
+    <nav>
+        <div class="ambot">
+            <div class="navboxone"></div>
+            <div class="navflexbox">FLEXBOX</div>
         </div>
-      </div>
-
-      <div class="maincont2">
-        <div class="mainbx2">
-          <div class="mainbox2"></div>
-          <div class="mainbox2"></div>
+        <div class="navmain">
+            <div class="navmain2boxes"></div>
+            <div class="navmain2boxes"></div>
         </div>
-        <div class="mainbx2">
-          <div class="mainbox2"></div>
-          <div class="mainbox2"></div>
-        </div>
-      </div>
-    </main>
-    <aside>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-      <div class="asideitem"></div>
-    </aside>
-  </div>
+    </nav>
 
-  <footer>
-    <div class="footer1">
-      <div class="footercont1">
-        <div class="footer1redbox"></div>
-        <div>FLEXBOX</div>
-      </div>
+    <div class="center">
+        <main>
+
+            <div class="centersecond">
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+                <div class="centersecondboxes"></div>
+            </div>
+
+            <div class="namo">
+                <div class="centerfirst">
+                    <div class="centerboxes1">
+                        <div class="centerfirstboxes1"></div>
+                        <div class="centerfirstboxes1"></div>
+                    </div>
+                    <div class="centerboxes2">
+                        <div class="centerfirstboxes2"></div>
+                        <div class="centerfirstboxes2"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
     </div>
 
-    <hr>
+    <footer>
+        <div class="footerfirst">
+            <div class="footerbox"></div>
+            <div class="footerflexbox">FLEXBOX</div>
+        </div>
 
-    <div class="footer2">
-      <div class="footer2boxes">
-        <div class="footer2redbox"></div>
-        <div class="footer2redbox"></div>
-        <div class="footer2redbox"></div>
-        <div class="footer2redbox"></div>
-        <div class="footer2redbox"></div>
-      </div>
+        <div class="footersecond"></div>
 
-      <div>Copyright All rights reserved.</div>
-    </div>
-  </footer>
+        <div class="footerthird">
+            <div class="footerboxes">
+                <div class="footercubes"></div>
+                <div class="footercubes"></div>
+                <div class="footercubes"></div>
+                <div class="footercubes"></div>
+                <div class="footercubes"></div>
+            </div>
+
+            <div class="footercopyright">©Copyrights All rights reserved</div>
+        </div>
+    </footer>
+
+
+
 </body>
 
 </html>
